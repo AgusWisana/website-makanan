@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pemesanan Makanan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Logo Makanan" class="logo">
+    </header>
+
+    <section class="menu-section">
+      <h2>Pilih Makanan</h2>
+      <div class="menu-list">
+        <label><input type="checkbox" value="Nasi Goreng"> Nasi Goreng</label>
+        <label><input type="checkbox" value="Mie Ayam"> Mie Ayam</label>
+        <label><input type="checkbox" value="Sate Ayam"> Sate Ayam</label>
+      </div>
+      <button onclick="lanjutForm()" class="btn">Pilih</button>
+    </section>
+
+    <section class="form-section" id="form-section">
+      <h2>Isi Data Pemesan</h2>
+      <form id="order-form">
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+
+        <label>No HP:</label>
+        <input type="tel" name="nohp" required>
+
+        <label>Alamat:</label>
+        <textarea name="alamat" rows="3" required></textarea>
+
+        <button type="submit" class="btn">Kirim Pesanan</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
